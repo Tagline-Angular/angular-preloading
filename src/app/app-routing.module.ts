@@ -12,17 +12,13 @@ const routes: Routes = [
   {
     path:'admin',
     loadChildren:()=> import('./admin/admin.module').then(a => a.AdminModule),
-    data : {
-      preload : true,
-      delay : 6000
-    }
   },
   {
     path:'payment',
     loadChildren:()=> import('./payment/payment.module').then(p => p.PaymentModule),
     data : {
       preload : true,
-      delay : 3000
+      delay : 4000
     }
   },
   {
