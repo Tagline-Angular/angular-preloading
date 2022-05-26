@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
+import { HomeModule } from './home/home.module';
+import { CustomPreloadingStrategyService } from './custom-preloading-strategy.service';
 
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HomeModule
   ],
-  providers: [],
+  providers: [CustomPreloadingStrategyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
