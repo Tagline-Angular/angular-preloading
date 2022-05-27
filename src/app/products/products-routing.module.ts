@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PaymentComponent } from './payment.component';
+import { ProductsComponent } from './products.component';
 
 const routes: Routes = [
   {
-    path:'',
-    component:PaymentComponent
+    path:'view',
+    component:ProductsComponent
   },
   {
     path:'**',
-    redirectTo:''
+    redirectTo:'view'
   }
 ];
 
@@ -17,4 +17,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PaymentRoutingModule { }
+export class ProductsRoutingModule { }

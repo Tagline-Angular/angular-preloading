@@ -22,6 +22,14 @@ const routes: Routes = [
     }
   },
   {
+    path:'products',
+    loadChildren:()=> import('./products/products.module').then(c => c.ProductsModule),
+    data : {
+      preload : true,
+      delay : 3000
+    }
+  },
+  {
     path:'**',
     redirectTo:'home'
   }
