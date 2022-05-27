@@ -7,17 +7,21 @@ import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
 import { CustomPreloadingStrategyService } from './custom-preloading-strategy.service';
+import { LoginComponent } from './login/login.component';
+import { FeatureModule } from './feature/feature.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    HomeModule
+    HomeModule,
+    FeatureModule
   ],
   providers: [CustomPreloadingStrategyService],
   bootstrap: [AppComponent]

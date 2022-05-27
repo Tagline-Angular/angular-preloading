@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public openModal: boolean = false;
+  public showPopup: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  openFeatureModal(){
+    console.log("Opening modal")
+    this.openModal = true ;
+  }
+
+  closeEvent(){
+    this.openModal=false;
+  }
 }

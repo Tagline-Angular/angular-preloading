@@ -15,4 +15,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   exports: [HeaderComponent]
 })
-export class SharedModule { }
+export class SharedModule {
+  constructor(){
+    console.log("Shared module loaded")
+  }
+ }
