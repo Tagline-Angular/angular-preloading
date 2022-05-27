@@ -1,53 +1,35 @@
-<button type="button" class="btn btn-primary d-none" id="modalOpenButton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+<button type="button" class="btn btn-primary d-none" id="modalOpenButton" data-bs-toggle="modal"
+    data-bs-target="#staticBackdrop">
     Launch demo modal
 </button>
-  
-<!-- <div class="modal fade" id="exampleModal" data-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Testing popup</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModalEvent()">Close</button>
-          <button type="button" class="btn btn-primary" (click)="closeModalEvent()"  data-bs-dismiss="modal">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary d-none" id="modalOpenButton" data-toggle="modal" data-target="#staticBackdrop">
-    Launch static backdrop modal
-</button> -->
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Testing popup</h5>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Testing popup</h5>
+            </div>
+            <div class="modal-body">
+                <div class="card-body">
+                    <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                    </h5>
+                    <p class="card-text placeholder-glow">
+                        <span class="placeholder col-7"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                    </p>
+                    <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                    (click)="closeModalEvent()">Close</button>
+                <button type="button" class="btn btn-primary" (click)="closeModalEvent()"
+                    data-bs-dismiss="modal">Done</button>
+            </div>
         </div>
-        <div class="modal-body">
-            <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                  <span class="placeholder col-6"></span>
-                </h5>
-                <p class="card-text placeholder-glow">
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                </p>
-                <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6"></a>
-              </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="closeModalEvent()">Close</button>
-            <button type="button" class="btn btn-primary" (click)="closeModalEvent()"  data-bs-dismiss="modal">Done</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>

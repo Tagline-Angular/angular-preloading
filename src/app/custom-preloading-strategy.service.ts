@@ -13,7 +13,6 @@ export class CustomPreloadingStrategyService implements PreloadingStrategy {
   constructor() { }
   preload(route: Route, loadMe: () => Observable<any>): Observable<any> {
     if(route.data && route.data['preload']) {
-
       var delay:number = route.data['delay'];
       console.warn('Preloading '+ route.path + '-module after ' + delay/1000 + ' seconds');
 
@@ -25,7 +24,7 @@ export class CustomPreloadingStrategyService implements PreloadingStrategy {
       )
 
     }else{
-      console.log("No modules to preload now")
+      console.log("No preloading defined for this module")
       return of(null);
     }
   }
