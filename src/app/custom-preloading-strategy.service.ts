@@ -24,7 +24,7 @@ export class CustomPreloadingStrategyService implements PreloadingStrategy {
       )
 
     }else{
-      console.log("No preloading defined for this module")
+      console.error("No preloading defined for " + route.path +" module")
       return of(null);
     }
   }
