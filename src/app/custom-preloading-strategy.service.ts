@@ -4,6 +4,7 @@ import { of } from 'rxjs';
 import { flatMap } from 'rxjs';
 import { timer } from 'rxjs';
 import { Observable } from 'rxjs';
+import { mergeMap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class CustomPreloadingStrategyService implements PreloadingStrategy {
       console.log('\n +++++++++++ Preloading '+ route.path + '-module after ' + delay/1000 + ' seconds +++++++++++ \n ');
 
       return timer(delay).pipe(
-        flatMap(_ =>{
+        mergeMap(_ =>{
           console.log("\n ============= " + route.path + "-module preloaded. =============\n " )
           return loadMe();
         })
